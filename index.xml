@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hot Headz Southern Foods – Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Guided Explore Nav (global) -->
+<div id="genRoot" class="gen-root" hidden>
+  <button id="genPill" class="gen-pill" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="genPanel">
+    <span class="gen-pill-ic" aria-hidden="true">🧭</span>
+    <span class="gen-pill-tx">Explore</span>
+    <span class="gen-pill-dot" aria-hidden="true"></span>
+  </button>
+  <div id="genPanel" class="gen-panel" role="dialog" aria-modal="false" aria-label="Explore the page" aria-hidden="true">
+    <div class="gen-panel-head">
+      <div class="gen-panel-title">
+        <div class="gen-title">Explore</div>
+        <div class="gen-sub">Jump to sections instantly</div>
+      </div>
+      <button id="genClose" class="gen-close" type="button" aria-label="Close explore panel">✕</button>
+    </div>
+    <div class="gen-panel-body">
+      <div class="gen-search" role="search">
+        <span class="gen-search-ic" aria-hidden="true">⌕</span>
+        <input id="genSearch" type="text" class="gen-search-input" placeholder="Search sections…" autocomplete="off" inputmode="search">
+      </div>
+      <div id="genList" class="gen-list" role="list"></div>
+    </div>
+    <div class="gen-panel-foot">
+      <div class="gen-foot-left">
+        <span class="gen-mini" aria-hidden="true">🔥</span>
+        <span class="gen-foot-tx">Tip: click a section to jump</span>
+      </div>
+      <button id="genTop" class="gen-top" type="button">Back to top</button>
+    </div>
+  </div>
+  <button id="genCoach" class="gen-coach" type="button" aria-label="Scroll to explore" hidden>
+    <span class="gen-coach-ic" aria-hidden="true">↓</span>
+    <span class="gen-coach-tx">Scroll for more</span>
+  </button>
+  <nav id="genDock" class="gen-dock" aria-label="Quick actions" hidden>
+    <a class="gen-dock-btn" href="/" aria-label="Home">
+      <span class="gen-dock-ic" aria-hidden="true">🏠</span>
+      <span class="gen-dock-tx">Home</span>
+    </a>
+    <a class="gen-dock-btn" href="menu.html" aria-label="Menu">
+      <span class="gen-dock-ic" aria-hidden="true">🍽️</span>
+      <span class="gen-dock-tx">Menu</span>
+    </a>
+    <a class="gen-dock-btn" href="/delivery" aria-label="Delivery options">
+      <span class="gen-dock-ic" aria-hidden="true">🚗</span>
+      <span class="gen-dock-tx">Delivery</span>
+    </a>
+    <a class="gen-dock-btn gen-dock-cta" href="tel:3372211035" aria-label="Place an order">
+      <span class="gen-dock-ic" aria-hidden="true">📞</span>
+      <span class="gen-dock-tx">Order</span>
+    </a>
+    <a id="genAboutLink" class="gen-dock-btn" href="/about" aria-label="About us">
+      <span class="gen-dock-ic" aria-hidden="true">ℹ️</span>
+      <span class="gen-dock-tx">About</span>
+    </a>
+    <button id="genSideShare" class="gen-dock-btn gen-side-share" type="button" aria-label="Share this page">
+      <span class="gen-dock-ic" aria-hidden="true">📤</span>
+      <span class="gen-dock-tx">Share</span>
+    </button>
+  </nav>
+</div>
+
+<!-- Required anchors for Explore Nav -->
+<div id="gen-home" style="position:absolute; top:0; left:0; width:1px; height:1px;"></div>
+<div id="gen-delivery" style="position:absolute; top:0; left:0; width:1px; height:1px;"></div>
+<div id="gen-menu" style="position:absolute; top:0; left:0; width:1px; height:1px;"></div>
+<div id="gen-order" style="position:absolute; top:0; left:0; width:1px; height:1px;"></div>
+<div id="gen-about" style="position:absolute; top:0; left:0; width:1px; height:1px;"></div>
+<div id="gen-location" style="position:absolute; top:0; left:0; width:1px; height:1px;"></div>
+
+<!-- Main Homepage Content -->
+<section class="hhx-home" aria-label="Hot Headz Southern Foods homepage">
+  <div class="hhx-backdrop" aria-hidden="true">
+    <div class="hhx-smoke"></div>
+    <div class="hhx-glow"></div>
+  </div>
+  <div class="hhx-wrap">
+    <header class="hhx-hero">
+      <div class="hhx-heroCard">
+        <div class="hhx-kicker">Home-style Southern cooking, made fresh daily</div>
+        <h1 class="hhx-h1">Hot Headz Southern Foods</h1>
+        <p class="hhx-sub">Breakfast &amp; Lunch • Cafeteria-Style • Made From Scratch</p>
+        <div class="hhx-ctaRow">
+          <a class="hhx-btn hhx-btn--primary" href="menu.html">View Today’s Menu</a>
+          <a class="hhx-btn" href="tel:3372211035">Call to Order</a>
+          <a class="hhx-btn" href="/delivery">Delivery Options</a>
+        </div>
+        <div class="hhx-quickFacts" role="list" aria-label="Quick info">
+          <div class="hhx-pill" role="listitem"><span class="hhx-dot" aria-hidden="true"></span> DeRidder, LA</div>
+          <div class="hhx-pill" role="listitem"><span class="hhx-dot hhx-dot2" aria-hidden="true"></span> Dine-In • Carry-Out • Delivery</div>
+          <div class="hhx-pill" role="listitem"><span class="hhx-dot hhx-dot3" aria-hidden="true"></span> (10 plates+ • within 10 miles)</div>
+        </div>
+      </div>
+      <div class="hhx-sigil" aria-hidden="true">
+        <div class="hhx-sigilRing"></div>
+        <div class="hhx-sigilCore"></div>
+        <img class="hhx-sigilLogo" src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/56a6bcf8-18fc-4dcc-9f69-fd6f3774fac2/IMG_4798.png?format=750w" alt="Hot Headz Southern Foods logo">
+        <div class="hhx-sigilText">EST. 2020</div>
+      </div>
+    </header>
+
+    <!-- Navigation Cards -->
+    <section class="hhx-navGrid" aria-label="Navigate">
+      <a class="hhx-navCard" href="menu.html">
+        <div class="hhx-navIcon" aria-hidden="true">🍽️</div>
+        <div class="hhx-navTitle">Menu</div>
+        <div class="hhx-navDesc">Breakfast plates, daily lunch, salad bar, drinks &amp; dessert.</div>
+      </a>
+      <a class="hhx-navCard" href="/delivery">
+        <div class="hhx-navIcon" aria-hidden="true">🚗</div>
+        <div class="hhx-navTitle">Delivery</div>
+        <div class="hhx-navDesc">Check availability &amp; how delivery works.</div>
+      </a>
+      <a class="hhx-navCard" href="/about">
+        <div class="hhx-navIcon" aria-hidden="true">🏠</div>
+        <div class="hhx-navTitle">About Us</div>
+        <div class="hhx-navDesc">Why locals call it “comfort food done right.”</div>
+      </a>
+      <a class="hhx-navCard" href="https://www.facebook.com/profile.php?id=100064025473003" target="_blank" rel="noopener">
+        <div class="hhx-navIcon" aria-hidden="true">📣</div>
+        <div class="hhx-navTitle">Facebook</div>
+        <div class="hhx-navDesc">Updates, posts, and community buzz.</div>
+      </a>
+    </section>
+
+    <!-- Story + Hours/Location -->
+    <section class="hhx-split">
+      <article class="hhx-panel">
+        <h2 class="hhx-h2">Fresh. Filling. From scratch.</h2>
+        <p class="hhx-p">Hot Headz Southern Foods serves hearty, home-style meals the way they’re meant to be — fresh, generous, and full of flavor. Come in for breakfast classics, then swing by for lunch favorites.</p>
+        <div class="hhx-featureRow">
+          <div class="hhx-feature">
+            <div class="hhx-featureTop"><span class="hhx-chip">Fast + Friendly</span><span class="hhx-chip">Cafeteria Style</span></div>
+            <div class="hhx-featureText">Order quick, eat happy, and get back to your day — without sacrificing quality.</div>
+          </div>
+          <div class="hhx-feature">
+            <div class="hhx-featureTop"><span class="hhx-chip">Made Daily</span><span class="hhx-chip">Comfort Food</span></div>
+            <div class="hhx-featureText">Classic Southern plates with the kind of flavor you remember.</div>
+          </div>
+        </div>
+      </article>
+      <aside class="hhx-panel hhx-panel--info" aria-label="Location, hours, and contact">
+        <div class="hhx-infoTop">
+          <div>
+            <div class="hhx-mini">Location</div>
+            <div class="hhx-strong">2741 US-190, DeRidder, LA 70634</div>
+            <a class="hhx-link" href="https://maps.google.com/?q=2741%20US-190%2C%20DeRidder%2C%20LA%2070634" target="_blank" rel="noopener">Get Directions →</a>
+          </div>
+          <div class="hhx-badge" aria-hidden="true">OPEN DAILY</div>
+        </div>
+        <div class="hhx-hours">
+          <div class="hhx-hourRow"><span>Mon–Fri</span><span>5:30 AM – 2:00 PM</span></div>
+          <div class="hhx-hourRow"><span>Saturday</span><span>6:00 AM – 2:00 PM</span></div>
+          <div class="hhx-hourRow"><span>Sunday</span><span>7:00 AM – 3:00 PM</span></div>
+        </div>
+        <div class="hhx-callBox">
+          <div class="hhx-mini">Call to Order</div>
+          <a class="hhx-call" href="tel:3372211035">(337) 221-1035</a>
+          <div class="hhx-callNote">Delivery available for 10+ orders within a 10-mile radius.</div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- Facebook Section -->
+    <section class="hhx-fbWrap" aria-label="Facebook updates">
+      <div class="hhx-fbPanel">
+        <div class="hhx-fbTop">
+          <div>
+            <div class="hhx-mini">Facebook</div>
+            <div class="hhx-fbTitle">Latest updates &amp; posts</div>
+            <div class="hhx-fbSub">Follow Hot Headz for daily specials, photos, and announcements.</div>
+          </div>
+          <a class="hhx-fbBtn" href="https://www.facebook.com/profile.php?id=100064025473003" target="_blank" rel="noopener">Open Facebook →</a>
+        </div>
+        <div class="hhx-fbGrid">
+          <div class="hhx-fbEmbed" aria-label="Facebook Page Feed">
+            <div class="hhx-fbFrame" id="hhx-fbFrame">
+              <iframe id="hhx-fbIframe" title="Hot Headz Facebook Feed" loading="lazy" scrolling="no" frameborder="0" allow="encrypted-media; picture-in-picture; web-share" allowfullscreen="true"></iframe>
+            </div>
+          </div>
+          <div class="hhx-fbSideCard">
+            <div class="hhx-fbSideIcon" aria-hidden="true">📘</div>
+            <div class="hhx-fbSideH">Join the community</div>
+            <div class="hhx-fbSideP">We post daily specials, behind‑the‑scenes, and local love.</div>
+            <div class="hhx-fbPills">
+              <span class="hhx-chip">Daily Updates</span>
+              <span class="hhx-chip">Community</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scrolling Photos -->
+    <section class="hhx-marquee" aria-label="Photo highlights">
+      <div class="hhx-marqueeTrack">
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/a1f1f8e4-ac79-47f2-83d3-3ca8cdc1465f/_1013557.png?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/bb8c3f58-b60a-43c8-a27b-23016601ae79/_1013546.png?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/e224a71b-4f49-491f-b025-2c35d8ebbbc9/627539034_1382867730524063_6201184549603031044_n.jpg?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/0db41e04-6d91-492f-8b42-4fc6248489e1/305566447_455732733237572_7406694886463339819_n.jpg?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/a318b1f8-44cd-4e14-91d0-28db1ec22992/Screenshot+2026-02-11+220600.png?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/60a521f4-075c-4248-b85b-0bd8c3bfcf24/FoodPicHotHeadz2.jpg?format=750w?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/bd1149f5-9010-4315-947f-43d0aae70bf9/FoodPicHotHeadz1.jpg?format=750w?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/a826ba0b-4314-493b-a043-7e310475acfe/FoodPicHotHeadz.jpg?format=750w?format=750w" alt=""></figure>
+        <!-- duplicate for loop -->
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/a1f1f8e4-ac79-47f2-83d3-3ca8cdc1465f/_1013557.png?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/bb8c3f58-b60a-43c8-a27b-23016601ae79/_1013546.png?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/e224a71b-4f49-491f-b025-2c35d8ebbbc9/627539034_1382867730524063_6201184549603031044_n.jpg?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/0db41e04-6d91-492f-8b42-4fc6248489e1/305566447_455732733237572_7406694886463339819_n.jpg?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/a318b1f8-44cd-4e14-91d0-28db1ec22992/Screenshot+2026-02-11+220600.png?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/60a521f4-075c-4248-b85b-0bd8c3bfcf24/FoodPicHotHeadz2.jpg?format=750w?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/bd1149f5-9010-4315-947f-43d0aae70bf9/FoodPicHotHeadz1.jpg?format=750w?format=750w" alt=""></figure>
+        <figure class="hhx-photo"><img src="https://images.squarespace-cdn.com/content/v1/696710c636aacc1859901840/a826ba0b-4314-493b-a043-7e310475acfe/FoodPicHotHeadz.jpg?format=750w?format=750w" alt=""></figure>
+      </div>
+    </section>
+
+    <!-- Hero Preview (Lunch Strip) -->
+    <section id="hhHomeMenuHero" aria-label="Today’s lunch preview">
+      <div class="hh-bg" aria-hidden="true"></div>
+      <div class="hh-inner">
+        <div class="hh-top">
+          <div class="hh-kicker" id="hhHeroKicker">Loading…</div>
+          <div class="hh-title" id="hhHeroTitle">Today’s Lunch Preview</div>
+          <p class="hh-sub" id="hhHeroSub">Swipe/drag left & right — tap any item to open the menu.</p>
+          <div class="hh-actions">
+            <a class="hh-btn hh-btn-primary" href="menu.html">View Full Menu</a>
+            <a class="hh-btn" href="tel:3372211035">Call to Order</a>
+          </div>
+        </div>
+        <div class="hh-strip" role="region" aria-label="Scrolling lunch items">
+          <div class="hh-track" id="hhHeroTrack"></div>
+          <div class="hh-fade left" aria-hidden="true"></div>
+          <div class="hh-fade right" aria-hidden="true"></div>
+        </div>
+        <button class="hh-down" id="hhHeroDown" type="button" aria-label="Scroll down">
+          <span class="hh-down-ic" aria-hidden="true"><span>↓</span></span>
+          <span>Keep scrolling</span>
+        </button>
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer" aria-label="Footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-left">
+      <h3 class="footer-title">Location</h3>
+      <address class="footer-text">2741 US-190,<br>Deridder, LA 70634</address>
+      <a class="footer-link" href="https://maps.google.com/?q=2741%20US-190%2C%20Deridder%2C%20LA%2070634" target="_blank" rel="noreferrer">Get Directions →</a>
+    </div>
+    <div class="footer-col footer-center">
+      <section class="hours" aria-label="Business hours">
+        <p class="hours-title">Hours</p>
+        <div class="hours-list">
+          <div class="hours-row"><div class="day">Mon–Fri</div><div class="time">5:30 AM – 2:00 PM</div></div>
+          <div class="hours-row"><div class="day"></div><div class="time crawfish-hours">4:00 PM – 8:00 PM Crawfish Hours</div></div>
+          <div class="hours-row"><div class="day">Saturday</div><div class="time">6:00 AM – 2:00 PM</div></div>
+          <div class="hours-row"><div class="day"></div><div class="time crawfish-hours">4:00 PM – 8:00 PM Crawfish Hours</div></div>
+          <div class="hours-row"><div class="day">Sunday</div><div class="time">7:00 AM – 3:00 PM</div></div>
+          <div class="hours-row"><div class="day"></div><div class="time crawfish-hours">4:00 PM – 8:00 PM Crawfish Hours</div></div>
+        </div>
+      </section>
+      <div class="contact-block">
+        <h3 class="footer-title">Contact Us</h3>
+        <a class="footer-link footer-phone" href="tel:+13372211035">(337) 221-1035</a>
+      </div>
+    </div>
+    <div class="footer-col footer-right">
+      <h3 class="footer-title">Follow Us</h3>
+      <a class="social-link" href="https://www.facebook.com/people/Hot-Headz-Southern-Foods/100064025473003/" target="_blank" rel="noreferrer">
+        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.56 9.88v-7H7.9V12h2.54V9.8c0-2.5 1.5-3.9 3.78-3.9 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.88h-2.34v7A10 10 0 0 0 22 12z"/></svg></span>
+        Facebook
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-meta">© <span id="year"></span> HotHeadzSouthernFoods. All rights reserved.</p>
+    <p class="footer-credit">Website by <strong>NorthStar Digital LLC</strong> · Built by <span class="credit-name">Westyn Ardoin</span></p>
+  </div>
+</footer>
+
+<script src="assets/js/global.js"></script>
+<script src="assets/js/hero-preview.js"></script>
+</body>
+</html>
