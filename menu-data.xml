@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Menu Data (hidden)</title></head>
+<body>
+<!-- Paste your JSON block here -->
+<script type="application/json" id="hh-menu-data">
+{
+  "settings": {
+    "showAdvancedTab": true,
+    "advancedDisclaimer": "Lunch posted 1–2 days early is subject to change.",
+    "autoClearPastDays": true,
+    "autoClearMessage": "Lunch menu unavailable.",
+    "advancedWindowDays": 7,
+    "noDescriptionText": "No description for this item.",
+    "clickForDescriptionHint": "Tip: click an item for description."
+  },
+  "hours": {
+    "note": "Enjoy!",
+    "weekly": [
+      { "day": "Monday", "open": "5:30 AM", "close": "2:00 PM", "breakfast": "5:30 AM – 10:30 AM", "lunch": "11:00 AM – 2:00 PM" },
+      { "day": "Tuesday", "open": "5:30 AM", "close": "2:00 PM", "breakfast": "5:30 AM – 10:30 AM", "lunch": "11:00 AM – 2:00 PM" },
+      { "day": "Wednesday", "open": "5:30 AM", "close": "2:00 PM", "breakfast": "5:30 AM – 10:30 AM", "lunch": "11:00 AM – 2:00 PM" },
+      { "day": "Thursday", "open": "5:30 AM", "close": "2:00 PM", "breakfast": "5:30 AM – 10:30 AM", "lunch": "11:00 AM – 2:00 PM" },
+      { "day": "Friday", "open": "5:30 AM", "close": "2:00 PM", "breakfast": "5:30 AM – 10:30 AM", "lunch": "11:00 AM – 2:00 PM" },
+      { "day": "Saturday", "open": "6:00 AM", "close": "2:00 PM", "breakfast": "6:00 AM – 10:30 AM", "lunch": "11:00 AM – 2:00 PM" },
+      { "day": "Sunday", "open": "7:00 AM", "close": "3:00 PM", "breakfast": "7:00 AM – 10:30 AM", "lunch": "11:00 AM – 3:00 PM" }
+    ]
+  },
+  "closures": {
+    "Sunday": { "closed": false, "message": "See you tomorrow!" }
+  },
+  "phoneTel": "tel:3372211035",
+  "deliveryNote": "Delivery available for 10 or more orders within a 10-mile radius.",
+  "defaults": { ... },  // (paste full defaults from Menu Data.xml)
+  "menus": { ... }      // (paste full menus from Menu Data.xml)
+}
+</script>
+</body>
+</html>
