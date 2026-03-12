@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Work Gallery | Family Land Tree Service</title>
+  <meta name="description" content="View our tree service portfolio in Deridder, LA. Real projects showing tree removal, trimming, stump grinding, and emergency storm damage cleanup.">
+
+  <!-- ===== PREMIUM ASSETS ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* ---------- RESET & ROOT (SAME AS HOMEPAGE) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+    html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      position: relative;
+      background-color: #0a1f1a;
+      padding-bottom: 90px;
+    }
+
+    :root {
+      --f-bg: #0a1f1a;
+      --f-card: #0f2f28;
+      --f-ice: #e0f2e9;
+      --f-sky: #2a9d8f;
+      --f-sky-light: #4fc3b3;
+      --f-sky-glow: rgba(42, 157, 143, 0.3);
+      --f-white: #ffffff;
+      --f-text: #ffffff;
+      --f-muted: rgba(255,255,255,0.95);
+      --f-subtle: rgba(255,255,255,0.85);
+      --f-border: rgba(255, 255, 255, 0.10);
+      --f-border-strong: rgba(42, 157, 143, 0.35);
+      --f-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+      --f-shadow-glow: 0 0 30px var(--f-sky-glow);
+      --transition-slow: 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --radius-xl: 16px;
+      --radius-pill: 30px;
+    }
+
+    body {
+      background-color: var(--f-bg);
+      color: var(--f-text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+    }
+
+    p { color: rgba(255,255,255,0.95); font-size: 1.05rem; }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-shadow: 0 3px 15px rgba(0,0,0,0.6);
+    }
+
+    h1 {
+      font-size: clamp(2.15rem, 7.8vw, 5.2rem);
+      line-height: 1.02;
+      background: linear-gradient(135deg, #fff 0%, var(--f-ice) 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 0.35em 0 0.25em;
+    }
+
+    h2 {
+      font-size: clamp(1.85rem, 5.2vw, 3.6rem);
+      background: linear-gradient(120deg, #fff, var(--f-sky));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.6rem;
+    }
+
+    .family-kicker {
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      color: var(--f-sky);
+      border-left: 4px solid var(--f-sky);
+      padding-left: 14px;
+      margin-bottom: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 18px;
+      width: 100%;
+    }
+
+    .section {
+      padding: clamp(56px, 7vw, 100px) 0;
+      position: relative;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 34px;
+      border-radius: var(--radius-pill);
+      font-weight: 900;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
+      font-size: 1.02rem;
+      letter-spacing: 0.4px;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--f-sky-light), var(--f-sky));
+      color: #ffffff !important;
+      box-shadow: 0 14px 30px -14px rgba(42, 157, 143, 0.55);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 28px 45px -18px rgba(42, 157, 143, 0.65);
+    }
+
+    .btn-outline {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: white !important;
+      backdrop-filter: blur(6px);
+    }
+    .btn-outline:hover {
+      border-color: var(--f-sky);
+      background: rgba(42, 157, 143, 0.12);
+      transform: translateY(-2px);
+    }
+
+    .badge-proof {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(42,157,143,0.38);
+      background: rgba(42,157,143,0.10);
+      color: var(--f-ice);
+      font-weight: 900;
+      letter-spacing: 0.2px;
+      white-space: nowrap;
+    }
+
+    /* ---------- GALLERY HERO ---------- */
+    .gallery-hero {
+      position: relative;
+      min-height: 50vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background: #0a1f1a;
+      padding: 120px 0 60px;
+    }
+    .gallery-hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center 30%;
+      opacity: 0.2;
+      filter: grayscale(20%);
+      z-index: 1;
+    }
+    .gallery-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, rgba(10,31,26,0.9) 0%, rgba(10,31,26,0.5) 100%);
+      z-index: 2;
+    }
+    .gallery-hero .container { position: relative; z-index: 10; }
+
+    /* ---------- GALLERY FILTER TABS ---------- */
+    .gallery-filter {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 40px 0 30px;
+    }
+    .filter-btn {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: white;
+      padding: 12px 24px;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--f-sky);
+      border-color: var(--f-sky);
+      transform: translateY(-2px);
+    }
+
+    /* ---------- MASONRY GALLERY GRID ---------- */
+    .gallery-masonry {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      margin-top: 20px;
+    }
+    
+    @media (min-width: 640px) {
+      .gallery-masonry {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .gallery-masonry {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    @media (min-width: 1280px) {
+      .gallery-masonry {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      cursor: pointer;
+      aspect-ratio: 4/3;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .gallery-item:hover {
+      transform: scale(1.02);
+      border-color: var(--f-sky);
+      box-shadow: var(--f-shadow-glow);
+      z-index: 10;
+    }
+    
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s;
+    }
+    
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+    
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.9));
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+    
+    .gallery-title {
+      font-weight: 800;
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+      color: white;
+    }
+    
+    .gallery-category {
+      font-size: 0.85rem;
+      color: var(--f-sky);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .gallery-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background: var(--f-sky);
+      color: #0f2f28;
+      padding: 4px 12px;
+      border-radius: var(--radius-pill);
+      font-weight: 800;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      z-index: 5;
+    }
+
+    /* ---------- LIGHTBOX MODAL ---------- */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.95);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+    
+    .lightbox.active {
+      display: flex;
+    }
+    
+    .lightbox-content {
+      max-width: 90vw;
+      max-height: 90vh;
+      position: relative;
+    }
+    
+    .lightbox-content img {
+      width: 100%;
+      height: auto;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: var(--radius-lg);
+      border: 2px solid var(--f-sky);
+    }
+    
+    .lightbox-close {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      background: rgba(255,255,255,0.1);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    
+    .lightbox-close:hover {
+      background: var(--f-sky);
+      transform: rotate(90deg);
+    }
+    
+    .lightbox-caption {
+      position: absolute;
+      bottom: -40px;
+      left: 0;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+    
+    .lightbox-prev, .lightbox-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255,255,255,0.1);
+      color: white;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.5rem;
+      transition: all 0.3s;
+    }
+    
+    .lightbox-prev { left: -70px; }
+    .lightbox-next { right: -70px; }
+    
+    .lightbox-prev:hover, .lightbox-next:hover {
+      background: var(--f-sky);
+    }
+    
+    @media (max-width: 768px) {
+      .lightbox-prev { left: 10px; }
+      .lightbox-next { right: 10px; }
+      .lightbox-prev, .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+      }
+      .lightbox-close { top: 10px; right: 10px; }
+    }
+
+    /* ---------- STATS SECTION ---------- */
+    .gallery-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin: 60px 0;
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      .gallery-stats { grid-template-columns: repeat(2, 1fr); }
+    }
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--f-sky);
+    }
+
+    /* ---------- FLOATING MENU (SAME AS HOMEPAGE) ---------- */
+    .family-bottom-menu {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000;
+      background: rgba(15, 47, 40, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(42, 157, 143, 0.35);
+      border-radius: 60px;
+      padding: 8px 20px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      max-width: 95vw;
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+    .family-bottom-menu::-webkit-scrollbar { display: none; }
+    .family-logo-block {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+    .family-logo-text {
+      font-weight: 900;
+      font-size: 1.2rem;
+      background: linear-gradient(135deg, #fff, var(--f-ice));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      white-space: nowrap;
+    }
+    .family-logo-text i {
+      color: var(--f-sky);
+      margin-right: 6px;
+    }
+    .family-nav-links {
+      display: flex;
+      gap: 8px;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+    .family-nav-links a {
+      color: rgba(255, 255, 255, 0.9);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 8px 16px;
+      border-radius: 40px;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+    .family-nav-links a i {
+      color: var(--f-sky);
+      font-size: 1.1rem;
+    }
+    .family-nav-links a:hover {
+      background: rgba(42, 157, 143, 0.15);
+      color: var(--f-sky);
+    }
+    .family-nav-links .cta {
+      background: linear-gradient(135deg, var(--f-sky-light), var(--f-sky));
+      color: #ffffff !important;
+      font-weight: 900;
+    }
+
+    /* ---------- FOOTER (SAME AS HOMEPAGE) ---------- */
+    .site-footer {
+      background: #0f2f28;
+      color: rgba(255,255,255,0.92);
+      padding: clamp(28px, 3.5vw, 52px) clamp(16px, 3vw, 28px) 18px;
+      border-top: 1px solid rgba(42,157,143,0.35);
+      text-align: center;
+      margin-top: 40px;
+    }
+    .footer-inner {
+      max-width: 1160px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(24px, 4vw, 60px);
+      justify-items: center;
+    }
+    .footer-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .footer-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+    .footer-text { color: rgba(255,255,255,0.9); }
+    .footer-link {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+    .footer-link:hover { color: var(--f-sky); }
+    .hours {
+      width: 100%;
+      max-width: 320px;
+      background: rgba(255,255,255,0.04);
+      border-radius: 16px;
+      padding: 18px 16px;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin: 8px 0;
+    }
+    .footer-phone {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: var(--f-sky) !important;
+      background: rgba(42,157,143,0.1);
+      padding: 8px 16px;
+      border-radius: 40px;
+    }
+    .footer-bottom {
+      max-width: 1160px;
+      margin: 30px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    @media (max-width: 900px) {
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .family-bottom-menu {
+        padding: 6px 16px;
+        gap: 15px;
+      }
+      .family-nav-links a { padding: 6px 12px; }
+    }
+    @media (max-width: 400px) {
+      .family-nav-links a span { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GALLERY HERO SECTION -->
+  <section class="gallery-hero">
+    <div class="gallery-hero-bg"></div>
+    <div class="gallery-hero-overlay"></div>
+    <div class="container">
+      <div class="family-badge" data-aos="fade-down">
+        <span class="pulse-dot"></span>
+        <span><i class="fas fa-camera"></i> OUR PORTFOLIO</span>
+        <span class="badge-proof"><i class="fas fa-check"></i> REAL PROJECTS · REAL RESULTS</span>
+      </div>
+      <h1 data-aos="fade-up">See our work.<br>Trust our experience.</h1>
+      <p class="hero-lead" data-aos="fade-up" style="max-width: 700px;">
+        Every tree tells a story. Browse through our gallery of real projects in Deridder and surrounding areas – from massive oak removals to precision trimming and emergency storm response.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY STATS -->
+  <div class="container">
+    <div class="gallery-stats">
+      <div><div class="stat-number">500+</div><div>Trees Removed</div></div>
+      <div><div class="stat-number">200+</div><div>Stumps Ground</div></div>
+      <div><div class="stat-number">150+</div><div>Emergency Calls</div></div>
+      <div><div class="stat-number">20+</div><div>Years Experience</div></div>
+    </div>
+  </div>
+
+  <!-- FILTER TABS -->
+  <div class="container">
+    <div class="gallery-filter">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="removal">Tree Removal</button>
+      <button class="filter-btn" data-filter="trimming">Trimming & Pruning</button>
+      <button class="filter-btn" data-filter="stump">Stump Grinding</button>
+      <button class="filter-btn" data-filter="emergency">Emergency Response</button>
+      <button class="filter-btn" data-filter="cleanup">Cleanup</button>
+    </div>
+  </div>
+
+  <!-- MASONRY GALLERY -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="gallery-masonry" id="gallery-grid">
+        
+        <!-- TREE REMOVAL PROJECTS -->
+        <div class="gallery-item" data-category="removal">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipPyMHHyRkJ2Ykm57zn81AJw_cGIuqKugADhpLtH=s680-w680-h510-rw" alt="Large oak removal">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Massive Oak Removal</div>
+            <div class="gallery-category">Tree Removal</div>
+          </div>
+          <span class="gallery-badge">Before & After</span>
+        </div>
+
+        <div class="gallery-item" data-category="removal">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipNfldGbAEQcM4o9LAPKAiLQZdnodAStxtGX4WD7=s680-w680-h510-rw" alt="Dead tree removal">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Dead Pine Removal</div>
+            <div class="gallery-category">Tree Removal</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="removal">
+          <img src="https://images.unsplash.com/photo-1525498128493-380d1990a112?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hazardous tree removal">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Hazardous Tree Removal</div>
+            <div class="gallery-category">Tree Removal</div>
+          </div>
+        </div>
+
+        <!-- TRIMMING & PRUNING -->
+        <div class="gallery-item" data-category="trimming">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipNeEJ7baN9Fl9-0D2PdRmXa3nt4pFPpUsUUX0eU=s680-w680-h510-rw" alt="Tree trimming">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Precision Trimming</div>
+            <div class="gallery-category">Trimming & Pruning</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="trimming">
+          <img src="https://images.unsplash.com/photo-1518084826497-611a6b17acf7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Palm tree trimming">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Palm Tree Maintenance</div>
+            <div class="gallery-category">Trimming & Pruning</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="trimming">
+          <img src="https://images.unsplash.com/photo-1598908317371-87d5b60c2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Crown reduction">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Crown Reduction</div>
+            <div class="gallery-category">Trimming & Pruning</div>
+          </div>
+        </div>
+
+        <!-- STUMP GRINDING -->
+        <div class="gallery-item" data-category="stump">
+          <img src="https://lh3.googleusercontent.com/p/AF1QipPsHFYpp4xdrIrOI71IhTr9Y4bWQCVDBeUCEzqM=s680-w680-h510-rw" alt="Stump grinding">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Stump Grinding</div>
+            <div class="gallery-category">Stump Removal</div>
+          </div>
+          <span class="gallery-badge">Complete</span>
+        </div>
+
+        <div class="gallery-item" data-category="stump">
+          <img src="https://images.unsplash.com/photo-1527153818091-1a9638521e2a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Large stump grinding">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Large Stump Removal</div>
+            <div class="gallery-category">Stump Grinding</div>
+          </div>
+        </div>
+
+        <!-- EMERGENCY RESPONSE -->
+        <div class="gallery-item" data-category="emergency">
+          <img src="https://images.unsplash.com/photo-1546542312-2850e8f2b6b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Storm damage">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Storm Damage Response</div>
+            <div class="gallery-category">Emergency</div>
+          </div>
+          <span class="gallery-badge">24/7 Response</span>
+        </div>
+
+        <div class="gallery-item" data-category="emergency">
+          <img src="https://images.unsplash.com/photo-1604263439201-171fb8c0fddc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tree on house">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Tree on House</div>
+            <div class="gallery-category">Emergency Removal</div>
+          </div>
+        </div>
+
+        <!-- CLEANUP -->
+        <div class="gallery-item" data-category="cleanup">
+          <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwero52A3tGqPOshTT321ABmuqY-5GH5sbz39SGcADpLOSwFkzV1X-U5KYQOMLKC3Xw2WppDWKDPdTUNrr_JvButWAF988CJLdehfN9zR9vsrOmdW3JHBCRzciuv951F92-1TN5kq2658lUPb=s680-w680-h510-rw" alt="Cleanup after tree work">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Spotless Cleanup</div>
+            <div class="gallery-category">Debris Removal</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="cleanup">
+          <img src="https://images.unsplash.com/photo-1564424224823-cd24cb6e92a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Wood chipping">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Brush Chipping</div>
+            <div class="gallery-category">Cleanup</div>
+          </div>
+        </div>
+
+        <!-- ADDITIONAL PROJECTS -->
+        <div class="gallery-item" data-category="removal">
+          <img src="https://images.unsplash.com/photo-1502158895-5a24c0c6c7a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Multi-tree removal">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Multi-Tree Removal</div>
+            <div class="gallery-category">Tree Removal</div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="trimming">
+          <img src="https://images.unsplash.com/photo-1547032175-7fc8c7bd15b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hedge trimming">
+          <div class="gallery-overlay">
+            <div class="gallery-title">Hedge & Bush Trimming</div>
+            <div class="gallery-category">Landscape Maintenance</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <button class="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- CTA SECTION -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-premium" style="background: radial-gradient(ellipse at 50% 50%, rgba(42,157,143,0.22), transparent 70%); border-radius: var(--radius-xl); padding: 60px 20px; text-align: center;">
+        <h2 style="font-size: clamp(2rem, 5vw, 3rem);">Ready to start your project?</h2>
+        <p style="font-size: 1.2rem; margin: 20px 0;">Free estimates • Same-day service • Family-owned since 2005</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 500px; margin: 30px auto 0;">
+          <a href="tel:3373964438" class="btn btn-primary"><i class="fas fa-phone-alt"></i> CALL NOW</a>
+          <a href="services.html" class="btn btn-outline">VIEW SERVICES</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h3 class="footer-title">Family Land Tree Service</h3>
+        <p class="footer-text"><strong>Family-Owned Since 2005</strong></p>
+        <p class="footer-text">📍 3475 Highway 3226, Deridder, LA 70634</p>
+      </div>
+      <div class="footer-col">
+        <div class="hours">
+          <h4 style="margin-bottom: 15px;">Hours</h4>
+          <div class="hours-row"><span>Mon – Sat</span> <span>7:00 AM – 6:00 PM</span></div>
+          <div class="hours-row"><span>Sunday</span> <span>Closed</span></div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3 class="footer-title">Contact</h3>
+        <a class="footer-link footer-phone" href="tel:3373964438"> 📞 (337) 396-4438</a>
+        <a class="footer-link" href="index.html">🏠 Home</a>
+        <a class="footer-link" href="services.html">🪓 Services</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Family Land Tree Service. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- FLOATING BOTTOM MENU -->
+  <div class="family-bottom-menu">
+    <a href="index.html" class="family-logo-block">
+      <span class="family-logo-text"><i class="fas fa-tree"></i> FAMILY LAND</span>
+    </a>
+    <div class="family-nav-links">
+      <a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a>
+      <a href="services.html"><i class="fas fa-cut"></i> <span>Services</span></a>
+      <a href="gallery.html" style="background: rgba(42,157,143,0.2);"><i class="fas fa-images"></i> <span>Gallery</span></a>
+      <a href="tel:3373964438" class="cta"><i class="fas fa-phone-alt"></i> <span>Call Now</span></a>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: false, duration: 1000 });
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // GALLERY FILTERING
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        // Filter items
+        const filter = button.getAttribute('data-filter');
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.getAttribute('data-category') === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // LIGHTBOX FUNCTIONALITY
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+    
+    let currentIndex = 0;
+    const galleryImages = [];
+
+    // Collect all gallery items with images
+    document.querySelectorAll('.gallery-item').forEach((item, index) => {
+      const img = item.querySelector('img');
+      const title = item.querySelector('.gallery-title')?.textContent || 'Tree Service Project';
+      const category = item.querySelector('.gallery-category')?.textContent || '';
+      
+      galleryImages.push({
+        src: img.src,
+        title: title,
+        category: category
+      });
+
+      item.addEventListener('click', () => {
+        currentIndex = index;
+        showLightbox(currentIndex);
+      });
+    });
+
+    function showLightbox(index) {
+      lightbox.classList.add('active');
+      lightboxImg.src = galleryImages[index].src;
+      lightboxCaption.innerHTML = `${galleryImages[index].title} · ${galleryImages[index].category}`;
+    }
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.classList.remove('active');
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+      showLightbox(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % galleryImages.length;
+      showLightbox(currentIndex);
+    });
+
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        lightbox.classList.remove('active');
+      } else if (e.key === 'ArrowLeft' && lightbox.classList.contains('active')) {
+        currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+        showLightbox(currentIndex);
+      } else if (e.key === 'ArrowRight' && lightbox.classList.contains('active')) {
+        currentIndex = (currentIndex + 1) % galleryImages.length;
+        showLightbox(currentIndex);
+      }
+    });
+
+    // Close when clicking outside image
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
