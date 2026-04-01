@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Unavailable — NorthStar Digital LLC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #060a0f;
+      --surface: #0d1520;
+      --gold: #c9a84c;
+      --gold-light: #e2c06e;
+      --white: #f0ece4;
+      --muted: #6a7d96;
+      --border: rgba(201,168,76,0.18);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Montserrat', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+    }
+
+    /* Top bar — matches NorthStar nav style */
+    .topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 2.4rem;
+      border-bottom: 1px solid var(--border);
+      background: rgba(6,10,15,0.92);
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+
+    .topbar-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      text-decoration: none;
+    }
+
+    .topbar-logo svg { flex-shrink: 0; }
+
+    .topbar-name {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+
+    .topbar-badge {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid var(--border);
+      padding: 0.28rem 0.8rem;
+      border-radius: 2px;
+    }
+
+    /* Main card */
+    .card {
+      width: 100%;
+      max-width: 560px;
+      text-align: center;
+      animation: rise 0.9s cubic-bezier(0.22,1,0.36,1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .eyebrow {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.1rem;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 8vw, 4rem);
+      font-weight: 600;
+      line-height: 1.05;
+      margin-bottom: 0.2rem;
+      color: var(--white);
+    }
+
+    h1 em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--gold-light);
+    }
+
+    .rule {
+      width: 48px;
+      height: 1px;
+      background: var(--gold);
+      margin: 1.5rem auto;
+      opacity: 0.6;
+    }
+
+    .body-text {
+      font-size: 0.88rem;
+      font-weight: 300;
+      line-height: 1.85;
+      color: #8a9eb8;
+      margin-bottom: 2rem;
+    }
+
+    .body-text strong {
+      color: var(--white);
+      font-weight: 600;
+    }
+
+    /* CTA block */
+    .cta-block {
+      border: 1px solid var(--border);
+      background: var(--surface);
+      border-radius: 3px;
+      padding: 1.6rem 2rem;
+    }
+
+    .cta-label {
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.7rem;
+    }
+
+    .phone {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 6vw, 2.8rem);
+      font-weight: 300;
+      letter-spacing: 0.04em;
+      color: var(--gold-light);
+      text-decoration: none;
+      line-height: 1;
+      transition: color 0.2s;
+      margin-bottom: 0.5rem;
+    }
+    .phone:hover { color: #fff; }
+
+    .company-name {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* Footer */
+    footer {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      text-align: center;
+      padding: 0.9rem;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(106,125,150,0.4);
+      border-top: 1px solid rgba(201,168,76,0.07);
+    }
+    footer span { color: rgba(201,168,76,0.35); }
+  </style>
+</head>
+<body>
+
+<!-- Top nav bar -->
+<nav class="topbar">
+  <a class="topbar-logo" href="https://northstardigitalweb.com" target="_blank">
+    <svg width="22" height="22" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M32 4 L35 29 L60 32 L35 35 L32 60 L29 35 L4 32 L29 29 Z" fill="#c9a84c"/>
+      <circle cx="32" cy="32" r="3" fill="#fffbe6" opacity="0.85"/>
+    </svg>
+    <span class="topbar-name">NorthStar Digital</span>
+  </a>
+  <span class="topbar-badge">Site Unavailable</span>
+</nav>
+
+<!-- Main content -->
+<div class="card">
+  <div class="eyebrow">Notice</div>
+
+  <h1>This Site Is<br/><em>No Longer Active</em></h1>
+
+  <div class="rule"></div>
+
+  <p class="body-text">
+    The website you are looking for has been <strong>discontinued</strong>.<br/>
+    Service for this domain is no longer active.<br/><br/>
+    If you are the site owner and wish to restore service,<br/>
+    please contact us directly.
+  </p>
+
+  <div class="cta-block">
+    <div class="cta-label">Contact</div>
+    <a class="phone" href="tel:+13373729118">(337) 372-9118</a>
+    <div class="company-name">NorthStar Digital LLC</div>
+  </div>
+</div>
+
+<footer>
+  &copy; <span>NorthStar Digital LLC</span> &nbsp;·&nbsp; DeRidder, Louisiana
+</footer>
+
+</body>
+</html>
